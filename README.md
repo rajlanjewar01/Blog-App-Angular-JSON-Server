@@ -1,5 +1,6 @@
 
-# Blog App Angular JSON-Server
+# Blog App Angular JSON-Server 
+Live link: (https://blog-app-angular-json-server.vercel.app/) deployed with Vercel.com
 
 ## Prerequisite:
 #### JSON-Server (Get a full fake REST API for local development)<br>
