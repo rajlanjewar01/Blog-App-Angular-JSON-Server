@@ -1,0 +1,26 @@
+<h2 class="text-center">Explore Our Latest Blog</h2>
+<div class="ui clearing divider"></div>
+<div class="container">
+    <!-- {{ posts | json }} -->
+    <ng-container *ngFor="let post of posts">
+    <div class="card" *ngIf="post.visiblity == '1'">
+      <div class="card-header">
+        <img src="{{ post.imgurl }}" alt="rover" />
+      </div>
+      <div class="card-body">
+        <span class="tag tag-teal">{{ post.category }}</span>
+        <h4>
+          {{ post.title }} 
+        </h4>
+        <p>
+          {{ post.description }}
+        </p>
+        <div class="user">
+          <div class="user-info">
+            <h5>-{{ post.date | date }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+</ng-container>
+</div>

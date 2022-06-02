@@ -1,0 +1,38 @@
+<br>
+<div class="ui container">
+    <div class="ui pointing menu">
+        <a class="item" routerLink="/">
+           MyApp
+        </a>
+        <div class="right menu">
+          <a class="item" routerLink="/home" routerLinkActive="active"> 
+              Home
+          </a>
+          <a class="item" routerLink="/sign-in" routerLinkActive="active">
+            Sign In
+          </a>
+          <a class="item" routerLink="/sign-up" routerLinkActive="active">
+            Sign Up
+          </a>
+          <!-- <a class="item" routerLink="/sign-out" routerLinkActive="active">
+            Sign Out
+          </a> -->
+          <a class="item" routerLink="/registered-user" routerLinkActive="active">
+           Registered user
+          </a>
+          <a class="item" routerLink="/published-post" routerLinkActive="active">
+            Published post
+           </a>
+		  <!--
+          <a class="item"> 
+            <button class="ui button primary" (click)="openDialog()">Add User</button>
+          </a> -->
+        </div>
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet>
+    </div>
+    <br><br>
+</div>
+
+
