@@ -81,7 +81,7 @@ export class AddPostComponent implements OnInit {
     this.api.putPost(this.addPostFrm.value, this.editData.id)
     .subscribe({
       next: (res) => {
-        console.log(res);
+        //console.log(res);
         alert("Post Updated success ✔");
         //reset form
         this.addPostFrm.reset();

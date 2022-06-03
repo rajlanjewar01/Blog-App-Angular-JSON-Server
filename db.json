@@ -45,7 +45,7 @@
     {
       "title": "Turns out, your ideal client does exist. Here's how to find them",
       "description": "Good clients exist, and there are a lot more than you think. Founder of Fried Cactus Studio Aron Leah explains how to find your ideal client and stop working with assholes. Forever!",
-      "visiblity": "1",
+      "visiblity": "0",
       "category": "science and technology",
       "imgurl": "https://cdn.dribbble.com/users/2109674/screenshots/17664818/media/7c37f51b645572eab1b411a097c841a7.png",
       "date": "2022-06-02",
@@ -86,6 +86,24 @@
       "imgurl": "https://cdn.dribbble.com/uploads/35851/original/067618e46869c943fef27523c79b5803.png?1650412217",
       "date": "2022-06-02",
       "id": 5
+    },
+    {
+      "title": "5 practical tips to pivot from graphic designer to web designer",
+      "description": "Learn how to make a straightforward transition from graphic design into web design. Get expert insights from former graphic designers turned web designers.",
+      "visiblity": "0",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/uploads/35686/original/4d0ed456e829793d9b7113c67d2daed5.jpg?1649803619",
+      "date": "2022-06-03",
+      "id": 6
+    },
+    {
+      "title": "10 excellent design blogs to follow for endless inspiration",
+      "description": "Styles may come and go, but these design blogs are forever!",
+      "visiblity": "1",
+      "category": "others",
+      "imgurl": "https://cdn.dribbble.com/users/896264/screenshots/16596771/newsletter-new3.jpg",
+      "date": "2022-06-03",
+      "id": 7
     }
   ]
 }

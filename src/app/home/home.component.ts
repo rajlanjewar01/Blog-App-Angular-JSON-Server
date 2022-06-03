@@ -33,6 +33,8 @@ export class HomeComponent implements OnInit {
   openDialog() {
     this.dialog.open(AddPostComponent,{
       width: '50%',
+    }).afterClosed().subscribe( res => {
+      this.fetchAllPost();
     });
   }
 
