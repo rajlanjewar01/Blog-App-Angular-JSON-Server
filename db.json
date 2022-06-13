@@ -39,13 +39,21 @@
       "password": "Pass@123",
       "confirmPassword": "Pass@123",
       "id": 7
+    },
+    {
+      "name": "steve099",
+      "email": "steve@gmail.com",
+      "phone": 2222222222,
+      "password": "Pass@123",
+      "repeatPassword": "Pass@123",
+      "id": 8
     }
   ],
   "posts": [
     {
       "title": "Turns out, your ideal client does exist. Here's how to find them",
       "description": "Good clients exist, and there are a lot more than you think. Founder of Fried Cactus Studio Aron Leah explains how to find your ideal client and stop working with assholes. Forever!",
-      "visiblity": "1",
+      "visiblity": "0",
       "category": "science and technology",
       "imgurl": "https://cdn.dribbble.com/users/2109674/screenshots/17664818/media/7c37f51b645572eab1b411a097c841a7.png",
       "date": "2022-06-02",
@@ -81,7 +89,7 @@
     {
       "title": "6 proven tips to help creatives collaborate remotely",
       "description": "With these six proven tips, you have a blueprint for ensuring you can creatively collaborate across the web.",
-      "visiblity": "1",
+      "visiblity": "0",
       "category": "science and technology",
       "imgurl": "https://cdn.dribbble.com/uploads/37270/original/5fcb4caef7975fd6d4430ef9387fdec3.png?1653495779",
       "date": "2022-06-06",
@@ -95,6 +103,24 @@
       "imgurl": "https://cdn.dribbble.com/users/59947/screenshots/17108611/muti_2.jpg",
       "date": "2022-06-06",
       "id": 6
+    },
+    {
+      "title": "Hello dribbble!",
+      "description": " I'm so happy to be a part of this amazing community.\nThank you very much @redro_om for the invitation!\nThis is my first shot! Hope you like it.",
+      "visiblity": "1",
+      "category": "science and technology",
+      "imgurl": "https://cdn.dribbble.com/users/5099202/screenshots/10947955/media/fc13fbbe7f1c0632977ce59928e56d35.gif",
+      "date": "2022-06-13",
+      "id": 7
+    },
+    {
+      "title": "Orix UI Colour Conceptual App Design. I tried to make an app that is minimal, modern, and easy to use without any distractions.",
+      "description": "Orix UI Colour Conceptual App Design. I tried to make an app that is minimal, modern, and easy to use without any distractions.\n\nThere's a lot of room for improvement, your feedback and appreciation are always welcome 😍\n_\nInstagram - Sajon.Co\n_\nFollow us on Twitter | Facebook | Instagram\nYou're always welcome to visit our amazing Blog",
+      "visiblity": "1",
+      "category": "others",
+      "imgurl": "https://cdn.dribbble.com/users/1997192/screenshots/14707350/media/5fb028f99f48c376f8dafcdea60ab23a.png",
+      "date": "2022-06-13",
+      "id": 8
     }
   ]
 }

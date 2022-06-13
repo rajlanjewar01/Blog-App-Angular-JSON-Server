@@ -12,8 +12,20 @@ export class PublishedPostComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
-    this.api.getAllPost().
-    subscribe(res=>this.posts = res);
+    this.api.getAllPost()
+    .subscribe({
+      next: (response) => {
+        console.log(response);
+        this.posts = response
+      },
+      error:(err) => {
+        alert("Fails to retrive posts data! ☹, please start your JSON-Server");
+      }
+    })
+    // subscribe(res=>this.posts = res,
+    //   err => {
+    //     console.log("Fails to retrive posts data! ☹, please start your JSON-Server");
+    //   });
   }
 
   // fetchPublishedPost(){

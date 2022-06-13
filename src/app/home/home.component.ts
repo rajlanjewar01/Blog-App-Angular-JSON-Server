@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   response: any = [];
 
   constructor(public dialog: MatDialog, private api: ApiService) {
-    this.fetchAllPost();
+    this.fetchAllPost()
   }
 
   ngOnInit(): void {}
