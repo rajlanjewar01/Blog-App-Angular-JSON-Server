@@ -11,6 +11,8 @@ import { find } from 'rxjs';
 })
 export class SignInComponent implements OnInit {
 
+  loggedStatus = "false";
+
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
@@ -29,13 +31,20 @@ export class SignInComponent implements OnInit {
     this.http.get<any>("http://localhost:3000/users")
     .subscribe(res => {
       const user = res.find( (a: any) => {
-        return a.email === this.signInFrm.value.email  && a.password === this.signInFrm.value.password;
+        return a.email === this.signInFrm.value.email && a.password === this.signInFrm.value.password;
       });
 
       if(user){
+        this.loggedStatus = "true";
+
+        if(localStorage.getItem('loggedUser')){
+          localStorage.setItem("loggedUser", this.loggedStatus);
+        }
         alert("login success");
         this.signInFrm.reset();
-        this.router.navigate(['registered-user'])
+
+        //this.router.navigate(['home']);
+        window.location.href = 'home';
       }
       else{
         alert("user not founds");

@@ -56,6 +56,9 @@
             <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['imgurl']?.errors?.['required']">
                 Please enter a value
             </div>
+            <div class="ui pointing red basic label" *ngIf="this.addPostFrm.controls?.['imgurl']?.errors?.['pattern']">
+                Please match the URL format
+            </div>
         </ng-container>
     </div>
 

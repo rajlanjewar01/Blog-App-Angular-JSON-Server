@@ -8,12 +8,12 @@ import { PublishedPostComponent } from './published-post/published-post.componen
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: PublishedPostComponent },
   { path: '', redirectTo: 'home', pathMatch:'full' },
+  { path: 'blog-setting', component: HomeComponent },
   { path: 'sign-in', component:SignInComponent },
   { path: 'sign-up', component:SignUpComponent },
-  { path: 'registered-user', component:RegisteredUserComponent },
-  { path: 'published-post', component: PublishedPostComponent }
+  { path: 'registered-user', component:RegisteredUserComponent }
 ];
 
 @NgModule({

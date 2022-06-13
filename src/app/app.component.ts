@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { DialogComponent } from './dialog/dialog.component';
 import { ApiService } from './services/api.service';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,19 @@ import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  constructor(private api: ApiService, private dialog: MatDialog ){}
+
+  loggedStatus = 'false';
+
+  constructor(private api: ApiService, private dialog: MatDialog, private router: Router ){}
   
   ngOnInit(): void {
-    // this.getAllUsers();
+    if(localStorage.getItem('loggedUser')){
+      if(localStorage.getItem('loggedUser') === 'true'){
+        this.loggedStatus = 'true';
+      }
+    }else{
+      localStorage.setItem('loggedUser', 'false');
+    }
   }
 
   openDialog() {
@@ -24,5 +34,18 @@ export class AppComponent implements OnInit{
       }
     })
   }
+
+  //log out
+  logOut(){
+    if(confirm("Are you sure?, want to Logout")){
+      this.loggedStatus = 'false';
+        if(localStorage.getItem('loggedUser')){
+          localStorage.setItem('loggedUser', 'false');
+          this.router.navigate(['home']);
+        }
+      }
+    }
+
+
 
 }
